@@ -1,14 +1,14 @@
 def nyc_pigeon_organizer(data)
 newHash = Hash.new
 
-  data.each_key {|q| #color/gender/lives
+  data.each_key {|q| 
 
-    data[q].each_key {|w| #subcategories of above(for example purple/grey/white)
+    data[q].each_key {|w| 
 
 
       w_string = w.to_s 
 
-      data[q][w].map {|e| #pigeon names
+      data[q][w].map {|e| 
 
         if (newHash[e])
 
